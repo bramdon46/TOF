@@ -21,7 +21,7 @@
             <a class="text-white nav-link" href="index.php">Inicio<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="text-white nav-link " href="" >Universidades</a>
+            <a class="text-white nav-link " href="universidades.php" >Universidades</a>
           </li>
           <li class="nav-item">
             <a class="text-white nav-link " href="" >Mejores carreras</a>

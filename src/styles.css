@@ -14,6 +14,18 @@ text-anchor: middle;
 user-select: none;
 }
 
+@media (min-width: 768px) {
+.bd-placeholder-img-lg {
+font-size: 3.5rem;
+  }
+}
+@media (max-width: 768px) {
+  #ta{
+  height: auto;
+  font-size: 0.9rem;
+  }
+}
+
 .colorOne{
   background-color: #005582 !important;
 }
@@ -27,9 +39,60 @@ user-select: none;
   background-color: 	#0086ad !important;
 }
 
+.marginTop1{
+  margin-top: 1% !important;
+}
 .marginTopBot20{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.marginLeft40{
+  margin-left: 40% !important;
+}
+.marginLeft25{
+  margin-left: 25% !important;
+}
+.marginLeft3{
+  margin-left: 3% !important;
+}
+
+.marginRight3{
+  margin-right: 5% !important;
+}
+
+.noMarginTop{
+  margin-top: 0 !important;
+}
+.noMarginBot{
+  margin-bottom: 0 !important;
+}
+
+.padding10{
+  padding: 20px;
+}
+
+.height1{
+  height: 90px !important;
+}
+
+.opacity{
+      opacity: 0.5 !important;
+}
+
+.noTextDecoration{
+  text-decoration: none !important;
+}
+
+.textColor1{
+  color: 	#0086ad !important;
+}
+
+.divisor{
+  height: 0;
+  margin: .5rem 0;
+  overflow: hidden;
+  border-top: 1px solid #005582;
 }
 
 .uni{
