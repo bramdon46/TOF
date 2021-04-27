@@ -1,0 +1,38 @@
+body {
+margin: 0;
+padding: 0;
+min-height: 75rem;
+padding-top: 4.5rem;
+}
+
+.bd-placeholder-img {
+font-size: 1.125rem;
+text-anchor: middle;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.colorOne{
+  background-color: #005582 !important;
+}
+.colorTwo{
+  background-color: #00c2c7 !important;
+}
+.colorThree{
+  background-color: #380036 !important;
+}
+.colorFour{
+  background-color: 	#0086ad !important;
+}
+
+.marginTopBot20{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.uni{
+    text-align: center;
+    padding: 100px 0 100px 0;
+}
