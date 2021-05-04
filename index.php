@@ -43,7 +43,7 @@
                     <div class="card-body">
                       <h5 class="card-title">¿Cuáles son las carreras mejor pagadas en México?</h5>
                       <p class="card-text">Revisa una lista de las carreras mejores pagadas en México hasta 2020, con esto pretendemos ayudarte a que veas cómo es realmente el ambiente laboral en nuestro país, para que puedas considerar si alguna carrera puede o no puede desarrollarse según las estadísticas.</p>
-                      <a href="" class="btn colorFour btn-primary">Ver lista de carreras</a>
+                      <a href="mejores_carreras.php" class="btn colorFour btn-primary">Ver lista de carreras</a>
                     </div>
                   </div>
           </div>
@@ -54,10 +54,10 @@
           <p class="card-text">En este apartado podrás ver un listado de todas las carreras que se toman en cuenta a la hora de dar un resultado a uno de los test que puedes realizar en nuestra página principal, tomamos en cuenta un total de 56 carreras disponibles de 7 universidades de renombre en la región para arrojar como resultado en nuestros test.
           <br><br>
           Selecciona una de la universidades para conocer a detalle sus carreras así como sus asignaturas o materias de las cuales disponen cada carrera, te recomendamos que si alguna carrera llama tu atención ingreses al link de la página de la universidad ya que en esta podras ver una mayor cantidad de información sobre la carrera de tu interés.</p>
-          <a href="" class="btn btn-light">Ver universidades</a>
+          <a href="universidades.php" class="btn btn-light">Ver universidades</a>
         </div>
 
         <?php include("src/footer.php")?>
-        
+
   </body>
 </html>

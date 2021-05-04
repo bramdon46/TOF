@@ -24,7 +24,7 @@
             <a class="text-white nav-link " href="universidades.php" >Universidades</a>
           </li>
           <li class="nav-item">
-            <a class="text-white nav-link " href="" >Mejores carreras</a>
+            <a class="text-white nav-link " href="mejores_carreras.php" >Mejores carreras</a>
           </li>
           <li class="nav-item">
             <a class="text-white nav-link " href="" >Test vocacional</a>

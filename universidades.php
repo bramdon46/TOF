@@ -391,7 +391,7 @@
           <p>Retícula: <a class=" noTextDecoration textColor1" href="https://tecuruapan.edu.mx/wp-content/uploads/2020/09/ReticulaIngCivil-1024x769.png">mostrar retícula</a></p>
         </div>
 
-        <!--*****************************-->
+        <!--*****************************Universidad del Valle de Atemajac******************-->
         <div class="tab-pane fade bg-white shadow p-3 mb-5 rounded" id="UNIVA" role="tabpanel" aria-labelledby="UNIVA-tab">
           <h4>Universidad del Valle de Atemajac</h4>
           <p>Ubicación: Calle Juan N. López 1198, Colonia La Magdalena,60080, Uruapan, Michoacán de Ocampo</p>
@@ -422,7 +422,7 @@
           <p class="noMarginTop ">Será un profesional capaz de administrar canales de comercialización, campañas promocionales, estrategias mercadológicas, crear propuestas innovadoras de comercialización, construir y gestionar marcas mediante análisis de tendencias, así como el desarrollo de genética de marca, a través de una actitud de liderazgo, visión estratégica, creatividad y trabajo colaborativo.</p>
           <p>Retícula: <a class=" noTextDecoration textColor1" href="https://www.univa.mx/uruapan/wp-content/uploads/sites/5/2020/03/Insert-gral-lic-Imp-Prof-MKT-y-Dis-Marca.pdf">mostrar retícula</a></p>
         </div>
-        
+
     </div>
 
   </nav>
