@@ -30,7 +30,7 @@
             <a class="text-white nav-link " href="test1.php" >Test vocacional</a>
           </li>
           <li class="nav-item">
-            <a class="text-white nav-link " href="" >Test de aptitud</a>
+            <a class="text-white nav-link " href="test2.php" >Test de aptitud</a>
           </li>
 <!--
           <li class="nav-item">

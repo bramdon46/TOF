@@ -29,7 +29,7 @@
                    <div class="card-body">
                      <h5 class="card-title">Test de aptitud</h5>
                      <p class="card-text">Una lista de actividades en las cuales quizás hayas tenido alguna experiencia personal. La finalidad es que determines que tan apto te consideras para cada una de ellas</p>
-                     <a href="" class="btn colorFour btn-primary">Realizar Test de aptitud</a>
+                     <a href="test2.php" class="btn colorFour btn-primary">Realizar Test de aptitud</a>
                    </div>
                </div>
 
