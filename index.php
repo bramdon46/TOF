@@ -20,7 +20,7 @@
                    <div class="card-body">
                      <h5 class="card-title">Test vocacional</h5>
                      <p class="card-text">Cuenta con 100 reactivos que puntea como resultado 20 juicios para cada área vocacional que mide.</p>
-                     <a href="" class="btn colorFour btn-primary">Realizar test vocacional</a>
+                     <a href="test1.php" class="btn colorFour btn-primary">Realizar test vocacional</a>
                    </div>
               </div>
 

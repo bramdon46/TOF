@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="src/styles.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary" >
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top colorOne" >
       <a class="text-white navbar-brand font-weight-bold" href="index.php">TOF: Think On Future</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
             <a class="text-white nav-link " href="mejores_carreras.php" >Mejores carreras</a>
           </li>
           <li class="nav-item">
-            <a class="text-white nav-link " href="" >Test vocacional</a>
+            <a class="text-white nav-link " href="test1.php" >Test vocacional</a>
           </li>
           <li class="nav-item">
             <a class="text-white nav-link " href="" >Test de aptitud</a>
