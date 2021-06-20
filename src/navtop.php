@@ -32,10 +32,10 @@
           <li class="nav-item">
             <a class="text-white nav-link " href="test2.php" >Test de aptitud</a>
           </li>
-<!--
+
           <li class="nav-item">
-            <a class="text-white nav-link " href="" >Algo mas</a>
-          </li>-->
+            <a class="text-white nav-link " href="bd.php" >Base de datos</a>
+          </li>
         </ul>
     </div>
   </nav>

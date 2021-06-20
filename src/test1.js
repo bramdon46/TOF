@@ -1,3 +1,34 @@
+const createGetName=()=>
+{
+  let ContenerdorDePreguntas = document.getElementById("preguntas");
+
+  var pregunta = document.createElement("main");
+  var divPregunta = document.createElement("div");
+  var parrafoPregunta = document.createElement("p");
+
+  var inputNombre = document.createElement("input");
+  var divrespuesta = document.createElement("div");
+
+  pregunta.className = "container";
+  divPregunta.className = "jumbotron colorFour align-middle shadow p-3 mb-5";
+  parrafoPregunta.className = "text-white d-flex justify-content-center ";
+  parrafoPregunta.innerHTML = 'Nombre de la persona que realiza este test';
+
+
+  inputNombre.className='form-control';
+  inputNombre.type='text';
+  inputNombre.id='nombre';
+  inputNombre.required=true;
+  inputNombre.setAttribute('placeholder','Nombre');
+  divrespuesta.className='form-floating mb-3';
+
+  divrespuesta.appendChild(inputNombre);
+
+  divPregunta.appendChild(parrafoPregunta);
+  divPregunta.appendChild(divrespuesta);
+  pregunta.appendChild(divPregunta);
+  ContenerdorDePreguntas.appendChild(pregunta);
+}
 // funcion que sirve para generar un recuadro con las preguntas a realizar en el test vocacional
 const CreateQuestion = (TextoPregunta, respuestaText1, respuestaText2 , idRespuesta1, idRespuesta2, RadioName) => {
 
@@ -78,8 +109,11 @@ createTituloTest=(tituloText, cuerpoText)=>
   divPregunta.appendChild(parrafoPregunta);
   ContenerdorDePreguntas.appendChild(pregunta);
 }
+//se instancia el campo para recibir el nombre de quien realiza el test
+createGetName();
 //se instancia la funcion crear titulo
 createTituloTest("Test Vocacional", "<br>Este inventario es útil para la comprensión de los intereses vocacionales de una persona, cuenta con 100 reactivos que puntea como resultado 20 juicios para cada área vocacional que mide. (Duración 15 minutos) <br>En este cuestionario se le pide que exprese su preferencia por diferentes ocupaciones. Las ocupaciones se presentan por pares y se le pide que las marque para indicar sus preferencias. En cada comparación, no tome en cuenta la diferencia de salario y/o prestigio.");
+
 
 // arreglo que muestra todas las preguntas del test vocacional
 let arrayPreguntas=["Ciencias Físicas" , "Ingeniero Civil", "Mecánico" , "Veterinario","Inventor" , "Agente de compras", "Químico" , "Comerciante de Automóviles",
@@ -114,6 +148,25 @@ for(var i=0; i<202; i+=2)
 }
 
 // cuando se oprime el voton evaluar
+
+let formu=document.getElementById("formulario");
+
+formu.addEventListener('submit',(e)=>
+{
+  Evaluar();
+  e.preventDefault();
+  var datos=
+  {
+    nombre: nombre.value,
+    test: 'Vocacional',
+    crud: 'alta'
+  };
+  $.post('src/crud.php', datos, function(response){
+        console.log(response);
+
+  });
+});
+
 const Evaluar = () =>{ // cuando se oprime el boton de evaluar las respuestas del test
 
   /*

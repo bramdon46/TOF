@@ -1,3 +1,34 @@
+const createGetName=()=>
+{
+  let ContenerdorDePreguntas = document.getElementById("preguntas");
+
+  var pregunta = document.createElement("main");
+  var divPregunta = document.createElement("div");
+  var parrafoPregunta = document.createElement("p");
+
+  var inputNombre = document.createElement("input");
+  var divrespuesta = document.createElement("div");
+
+  pregunta.className = "container";
+  divPregunta.className = "jumbotron colorFour align-middle shadow p-3 mb-5";
+  parrafoPregunta.className = "text-white d-flex justify-content-center ";
+  parrafoPregunta.innerHTML = 'Nombre de la persona que realiza este test';
+
+
+  inputNombre.className='form-control';
+  inputNombre.type='text';
+  inputNombre.id='nombre';
+  inputNombre.required=true;
+  inputNombre.setAttribute('placeholder','Nombre');
+  divrespuesta.className='form-floating mb-3';
+
+  divrespuesta.appendChild(inputNombre);
+
+  divPregunta.appendChild(parrafoPregunta);
+  divPregunta.appendChild(divrespuesta);
+  pregunta.appendChild(divPregunta);
+  ContenerdorDePreguntas.appendChild(pregunta);
+}
 //funcion que genera dinamicamente un recuadro con las preguntas y las opciones de respuesta
 const CreateDropDownQuestion = (TextoPregunta, respuestaText1, respuestaText2 , respuestaText3, respuestaText4, respuestaText5, idRespuesta1, idRespuesta2,idRespuesta3,idRespuesta4,idRespuesta5) => {
 
@@ -92,8 +123,12 @@ createTituloTest=(tituloText, cuerpoText)=>
   divPregunta.appendChild(parrafoPregunta);
   ContenerdorDePreguntas.appendChild(pregunta);
 }
+//se instancia el campo para recibir el nombre de quien realiza el test
+createGetName();
+
 //se instancia la funcion de generar un titulo e instrucciones
 createTituloTest("Test de aptitud", "<br>En seguida se presentará una lista de actividades en las cuales quizás hayas tenido alguna experiencia personal. La finalidad es que determines que tan apto te consideras para cada una de ellas. Para indicarlo selecciona uno de los siguientes números 1, 2, 3 o 4 guiándote por las explicaciones que siguen:<br><br> a)	1 si te consideras incompetente para esta actividad<br>b)	2 si te consideras medianamente apto<br>c)	3 si te consideras bastante apto<br>d)	4 si te consideras muy apto");
+
 //arreglos para almacenar las preguntas y sus opciones de respuestas
 let seccionArray=["Seccion A","Seccion B","Seccion C","Seccion D","Seccion E","Seccion F","Seccion G","Seccion H","Seccion I","Seccion J","Seccion K"]
 let preguntasArray=["Para expresarte con facilidad en clase o al conversar con tus amigos","Para redactar composiciones o artículos periodísticos","Para componer versos serios o jocosos","Para escribir cuentos, narraciones o historietas","Para saber distinguir y apreciar la buena literatura",//seccion A
@@ -114,6 +149,24 @@ for (var i = 0; i < 11; i++) {
   CreateDropDownQuestion(seccionArray[i] , preguntasArray[aux] , preguntasArray[aux+1], preguntasArray[aux+2], preguntasArray[aux+3], preguntasArray[aux+4], aux, aux+1, aux+2, aux+3, aux+4);
   aux+=5;
 }
+
+let formu=document.getElementById("formulario");
+
+formu.addEventListener('submit',(e)=>
+{
+  Evaluar();
+  e.preventDefault();
+  var datos=
+  {
+    nombre: nombre.value,
+    test: 'Aptitud',
+    crud: 'alta'
+  };
+  $.post('src/crud.php', datos, function(response){
+        console.log(response);
+
+  });
+});
 // arreglo para almacenar y manipular los tipos de aptitudes que hay
 let arrayTablaRespuestas = ["Verbal",
   "Numerica",

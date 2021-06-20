@@ -58,6 +58,7 @@
         </div>
 
         <?php include("src/footer.php")?>
+        <script src="src/logic.js"></script>
 
   </body>
 </html>
