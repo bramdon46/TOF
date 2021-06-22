@@ -72,4 +72,11 @@ $(document).ready(function() {
       document.getElementById(inde).remove();
     }
   });
+
+  $(document).on('click', '#reGeneral', (e) =>{
+    $.post('src/clasedb.php', 'datos', function(response)
+    {
+          console.log(response);
+    });
+  });
 });

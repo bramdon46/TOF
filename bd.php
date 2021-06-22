@@ -29,6 +29,20 @@
        </div>
       </main>
     </div>
+
+        <div>
+          <main class="container">
+            <div class="jumbotron d-flex justify-content-center mb-5 colorFour">
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary colorThree" id="reGeneral">General</button>
+                <button type="submit" class="btn btn-primary colorThree" id="reObjeto">Objeto</button>
+                <button type="submit" class="btn btn-primary colorThree" id="reLlave">LLave</button>
+                <button type="submit" class="btn btn-primary colorThree" id="reFecha">Fecha</button>
+                <button type="submit" class="btn btn-primary colorThree" id="reRFechas">Rango Fechas</button>
+              </div>
+            </div>
+          </main>
+        </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
